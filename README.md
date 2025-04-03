@@ -56,10 +56,10 @@ chmod +x ytdlp.py
 Einstellungen werden automatisch in `settings.ini` gespeichert:
 
 [Settings]
-  video_quality = 0    # 0=Beste, 1=Mittel, 2=Niedrig
-  audio_quality = 0    # 0=320kbps, ..., 5=32kbps
-  platform = 0         # 0=YouTube, ..., 5=Twitter
-  download_folder = /pfad/zum/ordner
+ - video_quality = 0    # 0=Beste, 1=Mittel, 2=Niedrig
+ - audio_quality = 0    # 0=320kbps, ..., 5=32kbps
+ - platform = 0         # 0=YouTube, ..., 5=Twitter
+ - download_folder = /pfad/zum/ordner
 
 
 ## 🌐 Unterstützte Plattformen
@@ -75,11 +75,11 @@ Einstellungen werden automatisch in `settings.ini` gespeichert:
 ## 🔧 Fehlerbehebung
 
 ### Fehler: Tkinter nicht installiert
-sudo apt install python3-tk
+- sudo apt install python3-tk
 
 ### Fehler: "ffmpeg nicht gefunden"
-sudo apt install ffmpeg && pip install --upgrade yt-dlp
-sudo apt install python3-tk
+- sudo apt install ffmpeg && pip install --upgrade yt-dlp
+- sudo apt install python3-tk
 
 ### Download-Abbruch bei Playlists:
 - Prüfen Sie die Internetverbindung.
