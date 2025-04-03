@@ -83,7 +83,6 @@ Einstellungen werden automatisch in `settings.ini` gespeichert:
 ### Fehler: "ffmpeg nicht gefunden"
 ```sudo apt install ffmpeg && pip install --upgrade yt-dlp```
 
-```sudo apt install python3-tk```
 
 ### Download-Abbruch bei Playlists:
 - Prüfen Sie die Internetverbindung.
