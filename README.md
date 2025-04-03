@@ -34,13 +34,13 @@ sudo apt install ffmpeg libx11-6 libxext6 libxrender1
 
 ## 📥 Installation
 
-1. Repository klonen:git clone [https://github.com/Theo555](https://github.com/Theo555/Youtube-Downloader-GUI)/ytdlp-gui.git
-cd ytdlp-gui
+1. Repository klonen: git clone https://github.com/Theo555/Youtube-Downloader-GUI.git
+2. cd ytdlp-gui
 
-2. Ausführungsrechte setzen:
+3. Ausführungsrechte setzen:
 chmod +x ytdlp.py
 
-3. Starten der Anwendung:
+4. Starten der Anwendung:
 ./ytdlp.py
 
 ## 🖱 Verwendung
@@ -54,11 +54,13 @@ chmod +x ytdlp.py
 
 ## ⚙ Konfiguration
 Einstellungen werden automatisch in `settings.ini` gespeichert:
+
 [Settings]
-video_quality = 0 # 0=Beste, 1=Mittel, 2=Niedrig
-audio_quality = 0 # 0=320kbps, ..., 5=32kbps
-platform = 0 # 0=YouTube, ..., 5=Twitter
-download_folder = /pfad/zum/ordner
+  video_quality = 0    # 0=Beste, 1=Mittel, 2=Niedrig
+  audio_quality = 0    # 0=320kbps, ..., 5=32kbps
+  platform = 0         # 0=YouTube, ..., 5=Twitter
+  download_folder = /pfad/zum/ordner
+
 
 ## 🌐 Unterstützte Plattformen
 | Plattform    | Video | Audio | Playlists |
@@ -72,6 +74,9 @@ download_folder = /pfad/zum/ordner
 
 ## 🔧 Fehlerbehebung
 
+### Fehler: Tkinter nicht installiert
+sudo apt install python3-tk
+
 ### Fehler: "ffmpeg nicht gefunden"
 sudo apt install ffmpeg && pip install --upgrade yt-dlp
 sudo apt install python3-tk
@@ -82,6 +87,27 @@ sudo apt install python3-tk
 
 ## 📄 Lizenz
 
-MIT-Lizenz © 2025 TK  
+MIT License
+
+Copyright (c) 2025 TK
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
 
