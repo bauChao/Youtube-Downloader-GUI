@@ -1,3 +1,5 @@
+<meta name="google-site-verification" content="google6c23a61298e26fa9">
+
 # YouTube-Downloader GUI
 
 Ein plattformübergreifendes Tool zum Herunterladen von Videos und Audios von YouTube, Vimeo, TikTok und anderen Plattformen.
