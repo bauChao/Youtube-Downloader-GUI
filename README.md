@@ -27,21 +27,21 @@ Ein plattformübergreifendes Tool zum Herunterladen von Videos und Audios von Yo
 ## 🛠 Voraussetzungen
 
 ### 📦 Python-Pakete
-pip install yt-dlp tkinter
+``pip install yt-dlp tkinter``
 
 ### 🖥 Systemabhängigkeiten (Debian/Ubuntu)
-sudo apt install ffmpeg libx11-6 libxext6 libxrender1
+``sudo apt install ffmpeg libx11-6 libxext6 libxrender1``
 
 ## 📥 Installation
 
-1. Repository klonen: git clone https://github.com/Theo555/Youtube-Downloader-GUI.git
-2. cd ytdlp-gui
+1. Repository klonen: ```git clone https://github.com/Theo555/Youtube-Downloader-GUI.git```
+2. ```cd ytdlp-gui```
 
 3. Ausführungsrechte setzen:
-chmod +x ytdlp.py
+```chmod +x ytdlp.py```
 
 4. Starten der Anwendung:
-./ytdlp.py
+```./ytdlp.py```
 
 ## 🖱 Verwendung
 1. **Plattform auswählen** aus dem Dropdown-Menü.
@@ -56,11 +56,14 @@ chmod +x ytdlp.py
 Einstellungen werden automatisch in `settings.ini` gespeichert:
 
 [Settings]
- - video_quality = 0    # 0=Beste, 1=Mittel, 2=Niedrig
- - audio_quality = 0    # 0=320kbps, ..., 5=32kbps
- - platform = 0         # 0=YouTube, ..., 5=Twitter
- - download_folder = /pfad/zum/ordner
 
+```video_quality = 0    # 0=Beste, 1=Mittel, 2=Niedrig```
+
+```audio_quality = 0    # 0=320kbps, ..., 5=32kbps```
+
+```platform = 0         # 0=YouTube, ..., 5=Twitter```
+
+```download_folder = /pfad/zum/ordner```
 
 ## 🌐 Unterstützte Plattformen
 | Plattform    | Video | Audio | Playlists |
@@ -75,11 +78,11 @@ Einstellungen werden automatisch in `settings.ini` gespeichert:
 ## 🔧 Fehlerbehebung
 
 ### Fehler: Tkinter nicht installiert
-- sudo apt install python3-tk
+```sudo apt install python3-tk```
 
 ### Fehler: "ffmpeg nicht gefunden"
-- sudo apt install ffmpeg && pip install --upgrade yt-dlp
-- sudo apt install python3-tk
+```sudo apt install ffmpeg && pip install --upgrade yt-dlp```
+```sudo apt install python3-tk```
 
 ### Download-Abbruch bei Playlists:
 - Prüfen Sie die Internetverbindung.
