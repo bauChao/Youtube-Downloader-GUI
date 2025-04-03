@@ -1,4 +1,4 @@
-<meta name="google-site-verification" content="google6c23a61298e26fa9">
+<meta name="google-site-verification" content="6c23a61298e26fa9">
 
 # YouTube-Downloader GUI
 
