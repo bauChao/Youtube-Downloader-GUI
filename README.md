@@ -34,7 +34,7 @@ sudo apt install ffmpeg libx11-6 libxext6 libxrender1
 
 ## 📥 Installation
 
-1. Repository klonen:git clone [https://github.com/Theo555](https://github.com/Theo555/Youtube-Downloder-GUI)/ytdlp-gui.git
+1. Repository klonen:git clone [https://github.com/Theo555](https://github.com/Theo555/Youtube-Downloader-GUI)/ytdlp-gui.git
 cd ytdlp-gui
 
 2. Ausführungsrechte setzen:
