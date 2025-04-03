@@ -44,7 +44,6 @@ chmod +x ytdlp.py
 ./ytdlp.py
 
 ## 🖱 Verwendung
-
 1. **Plattform auswählen** aus dem Dropdown-Menü.
 2. **URL einfügen** (Rechtsklick → Einfügen oder Strg+V).
 3. **Zielordner** festlegen (Standard: Aktuelles Verzeichnis).
@@ -54,7 +53,6 @@ chmod +x ytdlp.py
 5. Download starten mit entsprechendem Button.
 
 ## ⚙ Konfiguration
-
 Einstellungen werden automatisch in `settings.ini` gespeichert:
 [Settings]
 video_quality = 0 # 0=Beste, 1=Mittel, 2=Niedrig
@@ -63,7 +61,6 @@ platform = 0 # 0=YouTube, ..., 5=Twitter
 download_folder = /pfad/zum/ordner
 
 ## 🌐 Unterstützte Plattformen
-
 | Plattform    | Video | Audio | Playlists |
 |--------------|-------|-------|-----------|
 | YouTube      | ✅    | ✅    | ✅        |
