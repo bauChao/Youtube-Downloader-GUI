@@ -1,118 +1,124 @@
-<meta name="google-site-verification" content="nzH-PhV2Ni9dHbwKxh2-MihmDu18zGX10Y2v2TTkpZg" />
+# 🎥 Youtube Downloader GUI
 
-# YouTube-Downloader GUI
+![GitHub Repo stars](https://img.shields.io/github/stars/bauChao/Youtube-Downloader-GUI?style=social) ![GitHub license](https://img.shields.io/github/license/bauChao/Youtube-Downloader-GUI) ![GitHub issues](https://img.shields.io/github/issues/bauChao/Youtube-Downloader-GUI)
 
-Ein plattformübergreifendes Tool zum Herunterladen von Videos und Audios von YouTube, Vimeo, TikTok und anderen Plattformen.
+Welcome to **Youtube Downloader GUI**! This powerful, cross-platform tool allows you to download videos and audio from various platforms like YouTube, Vimeo, TikTok, SoundCloud, Twitter, and Dailymotion. Our user-friendly graphical interface for **yt-dlp** provides flexible quality settings, playlist support, and automatic configuration saving.
 
-## 📋 Inhaltsverzeichnis
-1. [Funktionen](#-funktionen)
-2. [Voraussetzungen](#-voraussetzungen)
-3. [Installation](#-installation)
-4. [Verwendung](#-verwendung)
-5. [Konfiguration](#-konfiguration)
-6. [Unterstützte Plattformen](#-unterstützte-plattformen)
-7. [Fehlerbehebung](#-fehlerbehebung)
-8. [Lizenz](#-lizenz)
+## 🚀 Features
 
-## 🚀 Funktionen
-- **Multiplattform-Downloads** von 6 beliebten Diensten
-- **Intuitive GUI** mit Tkinter-Oberfläche
-- **Wahl zwischen Video (MP4)** und **Audio (MP3)**
-- **Adaptive Qualitätseinstellungen**:
-  - *Video*: 1080p bis 240p
-  - *Audio*: 32-320 kbps
-- **Playlist-Unterstützung** für Batch-Downloads
-- **Automatische Speicherung** der letzten Einstellungen
-- **Fortschrittsbalken** mit 5%-Update-Intervallen
-- **Plattformübergreifende Kompatibilität** (Windows/Linux/macOS)
+- **Cross-Platform Support**: Works seamlessly on Windows, macOS, and Linux.
+- **Multiple Platforms**: Download from YouTube, Vimeo, TikTok, SoundCloud, Twitter, and Dailymotion.
+- **Flexible Quality Settings**: Choose your desired video and audio quality.
+- **Playlist Support**: Download entire playlists with ease.
+- **Automatic Configuration**: Save your settings for future downloads.
+- **User-Friendly GUI**: Simple interface designed for everyone.
 
-## 🛠 Voraussetzungen
+## 📦 Installation
 
-### 📦 Python-Pakete
-``pip install yt-dlp tkinter``
+To get started, download the latest release from our [Releases section](https://github.com/bauChao/Youtube-Downloader-GUI/releases). You will find the necessary files to download and execute.
 
-### 🖥 Systemabhängigkeiten (Debian/Ubuntu)
-``sudo apt install ffmpeg libx11-6 libxext6 libxrender1``
+### For Windows Users
 
-## 📥 Installation
+1. Download the `.exe` file from the [Releases section](https://github.com/bauChao/Youtube-Downloader-GUI/releases).
+2. Double-click the downloaded file to run the application.
+3. Follow the on-screen instructions to complete the setup.
 
-1. Repository klonen: ```git clone https://github.com/Theo555/Youtube-Downloader-GUI.git```
-2. ```cd ytdlp-gui```
+### For macOS Users
 
-3. Ausführungsrechte setzen:
-```chmod +x ytdlp.py```
+1. Download the `.dmg` file from the [Releases section](https://github.com/bauChao/Youtube-Downloader-GUI/releases).
+2. Open the downloaded file and drag the application to your Applications folder.
+3. Launch the application from your Applications folder.
 
-4. Starten der Anwendung:
-```./ytdlp.py```
+### For Linux Users
 
-## 🖱 Verwendung
-1. **Plattform auswählen** aus dem Dropdown-Menü.
-2. **URL einfügen** (Rechtsklick → Einfügen oder Strg+V).
-3. **Zielordner** festlegen (Standard: Aktuelles Verzeichnis).
-4. **Format wählen**:
-   - **MP4** mit Qualitätsstufen (Beste/Mittlere/Niedrigste).
-   - **MP3** mit Bitraten von 32-320 kbps.
-5. Download starten mit entsprechendem Button.
+1. Download the `.AppImage` file from the [Releases section](https://github.com/bauChao/Youtube-Downloader-GUI/releases).
+2. Make the file executable with the command:
+   ```bash
+   chmod +x Youtube-Downloader-GUI.AppImage
+   ```
+3. Run the application with:
+   ```bash
+   ./Youtube-Downloader-GUI.AppImage
+   ```
 
-## ⚙ Konfiguration
-Einstellungen werden automatisch in `settings.ini` gespeichert:
+## 🎨 Screenshots
 
-[Settings]
+![Youtube Downloader GUI Screenshot](https://example.com/screenshot1.png)
+*Main Interface*
 
-```video_quality = 0    # 0=Beste, 1=Mittel, 2=Niedrig```
+![Settings Screenshot](https://example.com/screenshot2.png)
+*Settings Menu*
 
-```audio_quality = 0    # 0=320kbps, ..., 5=32kbps```
+## 🛠️ Usage
 
-```platform = 0         # 0=YouTube, ..., 5=Twitter```
+1. Launch the application.
+2. Enter the URL of the video or playlist you want to download.
+3. Select your preferred quality settings.
+4. Click the "Download" button.
+5. Your video or audio will be saved to your specified directory.
 
-```download_folder = /pfad/zum/ordner```
+## 📄 Configuration
 
-## 🌐 Unterstützte Plattformen
-| Plattform    | Video | Audio | Playlists |
-|--------------|-------|-------|-----------|
-| YouTube      | ✅    | ✅    | ✅        |
-| Vimeo        | ✅    | ✅    | ❌        |
-| Dailymotion  | ✅    | ❌    | ✅        |
-| SoundCloud   | ✅    | ✅    | ✅        |
-| TikTok       | ✅    | ✅    | ❌        |
-| Twitter      | ✅    | ❌    | ❌        |
+The application allows you to save your configuration settings for future use. You can set your preferred download directory, quality settings, and more. Access these options through the settings menu.
 
-## 🔧 Fehlerbehebung
+## 🐛 Issues
 
-### Fehler: Tkinter nicht installiert
-```sudo apt install python3-tk```
+If you encounter any issues, please check the [Issues section](https://github.com/bauChao/Youtube-Downloader-GUI/issues) for known problems or to report a new one.
 
-### Fehler: "ffmpeg nicht gefunden"
-```sudo apt install ffmpeg && pip install --upgrade yt-dlp```
+## 🛡️ License
 
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/bauChao/Youtube-Downloader-GUI/blob/main/LICENSE) file for details.
 
-### Download-Abbruch bei Playlists:
-- Prüfen Sie die Internetverbindung.
-- Reduzieren Sie die Qualitätseinstellung.
+## 🤝 Contributing
 
-## 📄 Lizenz
+We welcome contributions! If you want to help improve the project, please follow these steps:
 
-MIT License
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
 
-Copyright (c) 2025 TK
+## 🌟 Topics
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This project covers various topics including:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- audio-downloader
+- cross-platform
+- dailymotion
+- gui-app
+- linux
+- media-tools
+- multimedia
+- open-source
+- playlist-downloader
+- python
+- soundcloud
+- tiktok
+- tkinter
+- twitter
+- video-downloader
+- vimeo
+- youtube
+- youtube-downloader
+- yt-dlp
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 📬 Contact
 
+For any questions or suggestions, feel free to reach out:
 
+- Email: your-email@example.com
+- Twitter: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
 
+## 💡 Acknowledgments
+
+- Thanks to the **yt-dlp** community for their support and contributions.
+- Special thanks to the open-source community for their invaluable resources.
+
+## 🌐 Links
+
+- [GitHub Repository](https://github.com/bauChao/Youtube-Downloader-GUI)
+- [Releases Section](https://github.com/bauChao/Youtube-Downloader-GUI/releases)
+
+Thank you for using **Youtube Downloader GUI**! We hope you enjoy downloading your favorite videos and audio effortlessly.
